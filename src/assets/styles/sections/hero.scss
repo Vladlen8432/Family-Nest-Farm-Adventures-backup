@@ -1,0 +1,162 @@
+.hero {
+  position: relative;
+  padding-top: 96px;
+  padding-bottom: 44px;
+  background-image: url('../../assets/images/hero/main@2x.jpg');
+  background-size: cover;
+  background-position: -260px;
+  height: 100vh;
+}
+
+// .main-title {
+//   color: #213003;
+//   text-align: center;
+//   font-family: Acme;
+//   font-size: 24px;
+//   line-height: 1.5;
+//   -webkit-text-stroke: 2px #e7ac38;
+// }
+
+.main-title {
+  margin: 0 auto;
+  width: 288px;
+  height: auto;
+}
+
+.title-img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-play-now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 44px;
+  left: 50%;
+  width: 234px;
+  height: auto;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.play-now-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background-color: #fbfaea;
+  border: 3px solid #d4422f;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  z-index: 2;
+  transition: background-color 0.4s ease;
+}
+
+.play-now-link:hover {
+  background-color: #f7eece;
+}
+
+.play-now {
+  color: #213003;
+  font-family: Acme;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.play-now-img {
+  width: 91px;
+  height: 20px;
+}
+
+.cow-img {
+  width: 167px;
+  height: 167px;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+// .cow-img-desk {
+//   display: none;
+// }
+
+.man-img {
+  width: 140px;
+  height: 287px;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    padding-top: 195px;
+    padding-bottom: 140px;
+    background-position: 0;
+  }
+
+  .main-title {
+    font-size: 64px;
+    width: 752px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .title-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container-play-now {
+    position: absolute;
+    bottom: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 272px;
+    height: auto;
+  }
+
+  .play-now-link {
+    padding: 16px;
+  }
+
+  .play-now {
+    font-size: 24px;
+  }
+
+  .cow-img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    left: -60px;
+  }
+
+  // .cow-img-desk {
+  //   position: absolute;
+  //   display: block;
+  //   bottom: 0;
+  //   left: -20px;
+  //   width: 500px;
+  //   height: 500px;
+  //   object-fit: contain;
+  //   left: -100px;
+  //   z-index: 1;
+  // }
+
+  .man-img {
+    width: 252px;
+    height: 517px;
+  }
+}

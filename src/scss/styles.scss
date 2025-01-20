@@ -1,0 +1,46 @@
+@use './common/reset';
+
+@use '../assets/styles/sections/header';
+@use '../assets/styles/sections/hero';
+@use '../assets/styles/sections/about';
+@use '../assets/styles/sections/advantages';
+@use '../assets/styles/sections/gallery';
+@use '../assets/styles/sections/start';
+@use '../assets/styles/sections/footer';
+
+@use '../assets/styles/pages/pages-header';
+@use '../assets/styles/pages/privacy';
+@use '../assets/styles/pages/terms';
+
+@font-face {
+  font-family: 'Acme';
+  src: url('../assets/fonts/Acme-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+:root {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(33, 48, 3, 1);
+  background-color: rgba(231, 172, 56, 1);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
